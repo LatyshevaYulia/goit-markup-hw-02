@@ -3,15 +3,9 @@
     --title-text-color:#212121;
     --accent-color:#2196F3;
     --title-hero:#FFFFFF;
+    --button:#F5F4FA;
+ 
  }
-
- body {
-    font-family: 'Montserrat', sans-serif;
-    font-family: 'Raleway', sans-serif;
-    font-family: 'Roboto', sans-serif;
-    background-color:var(--title-hero);
-     color: var(--primary-text-color);
-}
 
 .logo {
     color: var(--title-text-color);
@@ -21,7 +15,7 @@
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
-
+    letter-spacing: 0.03em;
 }
 
 .logo-color {
@@ -38,15 +32,16 @@
 
 .site-nav a {
    color: var(--title-text-color);
-   font-family: 'Roboto';
    font-style: normal;
    font-weight: 500;
    font-size: 14px;
    line-height: 1.14;
    text-decoration: none;
+   letter-spacing: 0.02em;
+   
 }
 
-.site-nav.link.current {
+.site-nav .link.current {
     color: var(--accent-color);
 }
 
@@ -54,51 +49,53 @@
     color: var(--accent-color);
 }
 
-.contacts-nav {
-    color: var(--title-text-color);
+.contacts-nav:hover,
+.contacts-nav:focus {
+    color: var(--accent-color);
+}
+
+.contact-nav,
+.email-nav {
+    color: var(--primary-text-color);
     text-decoration: none;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
 }
+
+.contact-nav:hover,
+.contact-nav:focus
+.email-nav:focus,
+.email-nav:hover {
+    color: var(--accent-color);
+}
+ 
 
 .contacts-nav:hover,
 .contacts-nav:focus {
     color: var(--accent-color);
 }
 
-.contact-nav {
-    color: var(--primary-text-color);
-    text-decoration: none;
-    font-family: 'Roboto';
+
+.title-menu {
+    color: var(--title-hero);
+}
+
+.button-nav {
+    color: var(--title-text-color);
+    background-color: var(--button);
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-}
-
-.contact-nav:hover,
-.contact-nav:focus {
-    color: var(--accent-color);
-}
-
-.button-primary {
-    color:var(--title-text-color);
-    background-color: #F5F4FA;
-    cursor: pointer;
-    font-family: 'Roboto';
-    font-weight: 500;
     font-size: 16px;
-    line-height: 1.63;
-    text-align: center;
-    border: 1px solid transparent;
+    line-height: 1.62;
+    border: none;
+
 }
 
-.button-nav :hover,
-.button-nav :focus,
-.button-nav :active {
+.button-nav:hover,
+.button-nav:focus {
     background-color: var(--accent-color);
 }
 
@@ -106,79 +103,53 @@
     color: var(--title-hero);
 }
 
-.title {
-    color: var(--title-text-color);
+.header {
+    color: #212121;
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 2;
-
+    letter-spacing: 0.06em;
 }
 
-.subtitle {
+.subhead {
     color: var(--primary-text-color);
+    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.88;
-}
-
-.logo-white {
-    color: var(--title-hero);
-    text-decoration: none;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1,19;
-    text-decoration: none;
-
+    line-height: 1.87;
+    letter-spacing: 0.03em;
 }
 
 .description {
     background-color: var(--title-text-color);
-    color: var(--title-hero);
+    color: var(--title-text-color);
 }
 
 .street-nav {
     color: var(--title-hero);
-    font-family: 'Roboto';
+    text-decoration: none;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1;
-    text-decoration: none;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 }
 
 .street-nav:hover,
 .street-nav:focus {
-    color: var(--accent-color);
-}
-
-.email-nav {
-    color: rgba(255, 255, 255, 0.6);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1;
-    text-decoration: none;
-
-}
-
-.email-nav:hover,
-.email-nav:focus {
-    color: var(--accent-color);
+    color: #2196F3;
 }
 
 .phone-nav {
-   color: rgba(255, 255, 255, 0.6);
-   font-family: 'Roboto';
-   font-style: normal;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 1;
-   text-decoration: none;
+    color: #757575;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    letter-spacing: 0.03em;
 }
 
 .phone-nav:hover,
