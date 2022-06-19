@@ -31,6 +31,7 @@
 
 .site-nav a {
    color: var(--title-text-color);
+   font-family: 'Roboto';
    font-style: normal;
    font-weight: 500;
    font-size: 14px;
@@ -55,6 +56,7 @@
 .contact-nav,
 .email-nav {
     color: var(--primary-text-color);
+    font-family: 'Roboto';
     text-decoration: none;
     font-style: normal;
     font-weight: 500;
@@ -65,8 +67,10 @@
 
 .contact-nav:hover,
 .contact-nav:focus
-.email-nav:focus,
-.email-nav:hover {
+.email-nav:hover,
+.email-nav:focus
+
+ {
     color: var(--accent-color);
 }
 
@@ -81,16 +85,20 @@
 
 .title-hero {
     color: var(--title-hero);
+    font-family: 'Roboto';
     background-color: var(--title-text-color);
+    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.06em;
+
 }
 
 .button-primary {
     color: var(--title-hero);
+    font-family: 'Roboto';
    background-color: #2196F3;
    font-weight: 700;
    font-size: 16px;
@@ -103,8 +111,10 @@
     color:var(--title-hero)
 }
 
-.setion-title {
+
+.section-title {
     color: var(--title-text-color);
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -114,6 +124,7 @@
 
 .subtitle {
     color: var(--primary-text-color) ;
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -123,6 +134,7 @@
 
 .title {
     color: var(--title-text-color);
+    font-family: 'Roboto';
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -133,6 +145,7 @@
 
 .team {
     color: black;
+    font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
@@ -141,6 +154,7 @@
 
 .team-name {
     color: var(--primary-text-color);
+    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -168,6 +182,7 @@
 
 .street-nav {
     color: var(--title-hero);
+    font-family: 'Roboto';
     text-decoration: none;
     font-style: normal;
     font-weight: 400;
@@ -181,9 +196,26 @@
     color: #2196F3;
 }
 
-.phone-nav {
-    color: #757575;
+.emal-nav {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Roboto';
+    text-decoration: none;
     font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;}
+
+.emal-nav:hover,
+.emal-nav:focus {
+ color: var(--accent-color);
+}
+ 
+
+.phone-nav {
+    color:rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-family: 'Roboto';
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -193,5 +225,5 @@
 
 .phone-nav:hover,
 .phone-nav:focus {
-    color: var(--accent-color);
+    color: var(--accent-color)
 }
